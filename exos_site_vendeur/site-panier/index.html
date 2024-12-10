@@ -96,6 +96,12 @@
         const jsonString = JSON.stringify(iphone);
         console.log(JSON.parse(jsonString));
 
+        function toggleTheme() {
+            document.body.classList.toggle('dark');
+            document.querySelector("header").classList.toggle("dark");
+           
+        }
+
     </script>
     <header>
         <div class="cart-icon">
@@ -104,6 +110,11 @@
 
         </div>
         <h1>Tech Store</h1>
+        <label class="switch">
+            <input type="checkbox" id="themeSwitch" onclick="toggleTheme()">
+            
+            <span class="slider"></span>
+        </label>
     
     <nav>
         <li>
